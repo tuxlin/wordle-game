@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import random
 
 
 def get_words():
@@ -17,6 +18,7 @@ def find_guess(words, words_guessed, elim, lpos):
         reqd_letters = []
     high_rank = 0
     guess = ''
+    guesses = set()
     skip = False
     for word,rank in words:
         if word in words_guessed:
@@ -37,6 +39,10 @@ def find_guess(words, words_guessed, elim, lpos):
             if rank > high_rank:
                 high_rank = rank
                 guess = word
+        if len(guess):
+            guesses.add(guess)
+    if len(guesses):
+        guess = list(guesses)[random.randint(0,len(guesses) - 1)]
     return guess, high_rank
 
 
