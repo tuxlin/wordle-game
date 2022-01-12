@@ -63,8 +63,6 @@ def get_uniq(x):
 
 flws = get_four_letter_words()
 pd.set_option("display.max_rows", None, "display.max_columns", None)
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-available_letters = list(alphabet)
 words_df = get_words_df()
 letters_df = column_list(words_df)
 cols_df = letters_df.T
