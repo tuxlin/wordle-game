@@ -26,7 +26,7 @@ guessing: ghost
 I win on turn 3
 ``` 
 
-or use the helper function by not passing an answer word and answer provide the results for each letter you entered into Wordle. However, this should be considered cheating and should only be used if you're convinced Wordle is crazy because no word could actually exist with the available letters. :)
+or use the helper function by not passing an answer word, select a word from the provided list, and then provide the results for each letter you entered into Wordle. However, this should be considered cheating and should only be used if you're convinced Wordle is crazy because no word could actually exist with the available letters. :)
 
 green = y
 yellow = a
